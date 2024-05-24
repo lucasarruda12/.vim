@@ -2,18 +2,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- enable show line numbers
-vim.opt.number = true
-
--- as definições de thanos
-vim.cmd('source ~/.config/nvim/unicodefs.vim')
-
--- set tab to 2 spaces
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-vim.bo.softtabstop = 2
-
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -52,3 +40,18 @@ require("nvim-tree").setup({
 
 -- use N to open nvim-tree
 vim.cmd('noremap N :NvimTreeToggle<CR>') 
+
+-- Copy to system clipboard
+vim.opt.clipboard:append('unnamedplus')
+
+-- enable show line numbers
+vim.opt.number = true  
+
+-- as definições de thanos
+vim.cmd('source ~/.config/nvim/unicodefs.vim')
+
+-- set tab to 2 spaces
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.bo.softtabstop = 2
