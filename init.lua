@@ -17,26 +17,13 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-  "nvim-tree/nvim-tree.lua",
-    version = "*",
+local opts = {
+  defaults = {
     lazy = false,
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
-    config = function()
-      require("nvim-tree").setup {}
-    end,
-})
+  }
+}
 
--- empty setup using defaults
-require("nvim-tree").setup({
-  actions = {
-    open_file = {
-      quit_on_open = true,
-    },
-  },
-})
+require("lazy").setup('plugins', {})
 
 -- use N to open nvim-tree
 vim.cmd('noremap N :NvimTreeToggle<CR>') 
@@ -44,11 +31,22 @@ vim.cmd('noremap N :NvimTreeToggle<CR>')
 -- Copy to system clipboard
 vim.opt.clipboard:append('unnamedplus')
 
--- enable show line numbers
+-- Set up spellchecking in portuguese
+vim.opt.spell = true
+vim.opt.spelllang = "pt_br"
+vim.opt.spellcapcheck = ""
+
+-- start clangd lsp
+
+
+-- show line numbers
 vim.opt.number = true  
 
--- as definições de thanos
+-- unicodefs
 vim.cmd('source ~/.config/nvim/unicodefs.vim')
+
+-- my own defs
+vim.cmd('source ~/.config/nvim/myowndefs.vim')
 
 -- set tab to 2 spaces
 vim.opt.tabstop = 2
