@@ -48,6 +48,9 @@ vim.cmd('source ~/.config/nvim/unicodefs.vim')
 -- my own defs
 vim.cmd('source ~/.config/nvim/myowndefs.vim')
 
+-- set colorscheme
+vim.cmd.colorscheme "catppuccin"
+
 -- set tab to 2 spaces
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
