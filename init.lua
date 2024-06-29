@@ -28,6 +28,9 @@ require("lazy").setup('plugins', {})
 -- use N to open nvim-tree
 vim.cmd('noremap N :NvimTreeToggle<CR>') 
 
+-- use M to go to header/implementation in c/cpp
+vim.cmd('noremap M :Ouroboros<CR>')
+
 -- Copy to system clipboard
 vim.opt.clipboard:append('unnamedplus')
 
