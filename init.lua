@@ -31,6 +31,10 @@ vim.cmd('noremap N :NvimTreeToggle<CR>')
 -- use M to go to header/implementation in c/cpp
 vim.cmd('noremap M :Ouroboros<CR>')
 
+-- Modify the default autocomplete menu in the ex command prompt
+vim.cmd('set wildmenu')
+vim.cmd('set wildmode=full')
+
 -- Copy to system clipboard
 vim.opt.clipboard:append('unnamedplus')
 
