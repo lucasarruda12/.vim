@@ -11,6 +11,9 @@ vim.g.have_nerd_font = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- Source Unicodefs
+vim.cmd("source unicodefs.vim")
+
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 
