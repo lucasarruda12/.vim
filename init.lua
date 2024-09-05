@@ -12,7 +12,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- Source Unicodefs
-vim.cmd 'source unicodefs.vim'
+vim.cmd 'source ~/.config/nvim/unicodefs.vim'
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
