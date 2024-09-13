@@ -7,8 +7,9 @@ set expandtab       " Use spaces instead of tabs
 set tabstop=2       " Add 2 spaces when pressing tab 
 set shiftwidth=4    " Show tabs as 4 spaces (default)
 
-
 " Custom Mappings
+nnoremap <Leader>m :Vexplore<CR>              " Open netrw on the current working dir
+
 noremap - ddp                                 " Move line up
 noremap _ ddkP                                " Move line down
 
