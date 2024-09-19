@@ -22,7 +22,30 @@ nnoremap L A<esc>                             " Move to the end of line
 inoremap <c-u> <esc>viwUi                     " Uppercase the current word (insert)
 nnoremap <c-u> viwU<esc>                      " Uppercase the current word (normal)
 
+" Auto-indent the current buffer
+nnoremap <leader>i gg=G
+
+augroup file_specific_commands
+    autocmd!
+    " Set no wrap for HTML files
+    autocmd BufNewFile,BufRead *.html setlocal nowrap
+
+    " Remove line numbers for markdown files
+    autocmd BufNewFile,BufRead *.md setlocal nonumber
+augroup END
+
+" To reduce press-esc-to-exit-insert-mode workload
+inoremap jk <esc>
+inoremap kj <esc>
+
+" Disable the arrow keys :(
+noremap <left> <nop>
+noremap <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+
 " nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel     
 " nnoremap <leader>' viw<esc>a'<esc>bi'<esc>lel
 " vnoremap <leader>' <c-c>`<i'<esc>`>a'<esc>
 " vnoremap <leader>" <c-c>`<i"<esc>`>a"<esc>
+
