@@ -8,7 +8,7 @@ set tabstop=2       " Add 2 spaces when pressing tab
 set shiftwidth=4    " Show tabs as 4 spaces (default)
 
 " Custom Mappings
-nnoremap <Leader>m :Vexplore<CR>              " Open netrw on the current working dir
+nnoremap <Leader>m :Explore<CR>              " Open netrw on the current working dir
 
 noremap - ddp                                 " Move line up
 noremap _ ddkP                                " Move line down
@@ -16,7 +16,7 @@ noremap _ ddkP                                " Move line down
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>      " Edit .vimrc file
 nnoremap <leader>sv :source $MYVIMRC<cr>      " Source .vimrc file
 
-nnoremap H 0                                  " Move to the start of line
+nnoremap H I<esc>                             " Move to the start of line
 nnoremap L A<esc>                             " Move to the end of line
 
 inoremap <c-u> <esc>viwUi                     " Uppercase the current word (insert)
@@ -43,6 +43,11 @@ noremap <left> <nop>
 noremap <right> <nop>
 noremap <up> <nop>
 noremap <down> <nop>
+
+inoremap <left> <nop>
+inoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
 
 " nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel     
 " nnoremap <leader>' viw<esc>a'<esc>bi'<esc>lel
