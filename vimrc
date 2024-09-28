@@ -1,3 +1,5 @@
+source ./unicodefs.vim
+
 let mapleader = " " " Use space as my leader key
 set number          " Show line numbers
 syntax on           " Enable syntax highlighting

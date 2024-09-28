@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/lucas/.vim'
 let g:netrw_dirhist_8='/storage/emulated/0/Documents/Notes/laes'
 let g:netrw_dirhist_7='/storage/emulated/0/Documents/Notes/fun'
 let g:netrw_dirhist_6='/storage/emulated/0/Documents/Notes/lp2'
