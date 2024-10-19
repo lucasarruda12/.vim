@@ -1,18 +1,15 @@
+"open little netrw window
 nnoremap <Leader>m :Explore<CR>       
 
-noremap - ddp                          
-noremap _ ddkP                          
-
+"edit and source vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr> 
 nnoremap <leader>sv :source $MYVIMRC<cr>  
 
-nnoremap H I<esc>                             
-nnoremap L A<esc>                            
-
-inoremap <c-u> <esc>viwUi                   
-nnoremap <c-u> viwU<esc>                   
-
+"open little terminal window
 nnoremap <leader>t :botright terminal ++rows=10 <cr>
+
+"edit file under cursor
+nnoremap <leader>ef :edit <C-R>=expand('<cfile>')<cr><cr>
 
 " Auto-indent the current buffer
 nnoremap <leader>i gg=G
