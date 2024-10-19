@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/lucas/.vim'
+let g:netrw_dirhist_6='/home/lucas'
+let g:netrw_dirhist_5='/home/lucas/.vim'
 let g:netrw_dirhist_4='/home/lucas'
 let g:netrw_dirhist_3='/home/lucas/notes'
 let g:netrw_dirhist_2='/home/lucas/notes/30-39 2024.2/33 Lógica Aplicada à Engenharia de Software'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_1='/home/lucas/notes'
 let g:netrw_dirhist_0='/home/lucas/notes/fmcmon'
 let g:netrw_dirhist_9='/home/lucas/.vim'
 let g:netrw_dirhist_8='/storage/emulated/0/Documents/Notes/laes'
-let g:netrw_dirhist_7='/storage/emulated/0/Documents/Notes/fun'
-let g:netrw_dirhist_6='/storage/emulated/0/Documents/Notes/lp2'
-let g:netrw_dirhist_5='/storage/emulated/0/Documents/Notes/laes'
