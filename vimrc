@@ -24,6 +24,8 @@ nnoremap L A<esc>                             " Move to the end of line
 inoremap <c-u> <esc>viwUi                     " Uppercase the current word (insert)
 nnoremap <c-u> viwU<esc>                      " Uppercase the current word (normal)
 
+nnoremap <leader>t :botright terminal ++rows=10 <cr>
+
 " Auto-indent the current buffer
 nnoremap <leader>i gg=G
 
