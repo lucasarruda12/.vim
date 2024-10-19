@@ -27,6 +27,12 @@ augroup END
 inoremap jk <esc>
 inoremap kj <esc>
 
+" move around windows with the leader key
+nnoremap <leader>h :wincmd h<cr>
+nnoremap <leader>j :wincmd j<cr>
+nnoremap <leader>k :wincmd k<cr>
+nnoremap <leader>l :wincmd l<cr>
+
 " Disable the arrow keys :(
 noremap <left> <nop>
 noremap <right> <nop>
