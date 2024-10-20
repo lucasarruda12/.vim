@@ -6,10 +6,10 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>  
 
 "open little terminal window
-nnoremap <leader>t :botright terminal ++rows=10 <cr>
+nnoremap <leader>t :terminal ++rows=10 <cr>
 
 "edit file under cursor
-nnoremap <leader>ef :edit <C-R>=expand('<cfile>')<cr><cr>
+nnoremap <leader>ef :split <C-R>=expand('<cfile>')<cr><cr>
 
 " Auto-indent the current buffer
 nnoremap <leader>i gg=G
@@ -21,6 +21,10 @@ augroup file_specific_commands
 
     " Remove line numbers for markdown files
     autocmd BufNewFile,BufRead *.md setlocal nonumber
+
+    " Highligh undefined for Haskell files (hi https://tsouanas.org/teaching/fun/2024.2/#hw)
+    autocmd FileType haskell syntax match HaskellUndefined /undefined/
+    autocmd FileType haskell highlight HaskellUndefined ctermfg=red guifg=red
 augroup END
 
 " To reduce press-esc-to-exit-insert-mode workload
