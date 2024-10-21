@@ -6,10 +6,10 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>  
 
 "open little terminal window
-nnoremap <leader>t :terminal ++rows=10 <cr>
+nnoremap <leader>t :vert terminal ++cols=40 <cr>
 
 "edit file under cursor
-nnoremap <leader>ef :split <C-R>=expand('<cfile>')<cr><cr>
+nnoremap <leader>ef :vsplit <C-R>=expand('<cfile>')<cr><cr>
 
 " Auto-indent the current buffer
 nnoremap <leader>i gg=G
