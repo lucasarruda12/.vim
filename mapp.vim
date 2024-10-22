@@ -21,10 +21,6 @@ augroup file_specific_commands
 
     " Remove line numbers for markdown files
     autocmd BufNewFile,BufRead *.md setlocal nonumber
-
-    " Highligh undefined for Haskell files (hi https://tsouanas.org/teaching/fun/2024.2/#hw)
-    autocmd FileType haskell syntax match HaskellUndefined /undefined/
-    autocmd FileType haskell highlight HaskellUndefined ctermfg=red guifg=red
 augroup END
 
 " To reduce press-esc-to-exit-insert-mode workload
