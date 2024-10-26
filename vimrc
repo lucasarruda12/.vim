@@ -10,6 +10,8 @@ set shiftwidth=4    " Show tabs as 4 spaces (default)
 filetype on
 filetype plugin on
 
+colorscheme retrobox
+
 " Disable the arrow keys :(
 noremap <left> <nop>
 noremap <right> <nop>
