@@ -1,9 +1,3 @@
-source ~/.vim/optt.vim
-source ~/.vim/mapp.vim
-source ~/.vim/unicodefs.vim
-source ~/.vim/statusline.vim
-source ~/.vim/filetype-specific/*.vim
-
 " Currently following Steve Losh´s Learn VimScript the Hard Way. Some of its
 " exercises are very usefull, some are not. Im keeping everything in this main
 " file for now and figuring out later what i need and what i dont.
