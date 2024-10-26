@@ -1,16 +1,19 @@
-let mapleader = " " " Use space as my leader key
-set number          " Show line numbers
-syntax on           " Enable syntax highlighting
-set scrolloff=10    " Set a minimum of 10 lines under/above the cursor
+let mapleader = " "
+set number
+syntax on
+set scrolloff=10
 
-set expandtab       " Use spaces instead of tabs
-set tabstop=2       " Add 2 spaces when pressing tab 
-set shiftwidth=4    " Show tabs as 4 spaces (default)
+set expandtab
+set tabstop=2
+set shiftwidth=4
 
 filetype on
 filetype plugin on
 
 colorscheme retrobox
+
+set hlsearch
+set incsearch
 
 " Disable the arrow keys :(
 noremap <left> <nop>
@@ -37,5 +40,17 @@ augroup vimscript_hard_way
 
     autocmd FileType haskell iabbrev <buffer> oth otherwise
     autocmd FileType haskell iabbrev <buffer> let let a in b
-augroup END
 
+    " Mark trailling whitespace as error
+    nnoremap <leader>w :match Error /\v\s+$/<cr>
+    nnoremap <leader>W :match none<cr>
+
+    " Hide search highlights
+    nnoremap <leader>h :set nohlsearch<cr>
+
+    " Start a search with \v
+    nnoremap <leader>/ /\v
+
+    " nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cword>")) . " ."<cr>:copen<cr>
+
+augroup END
