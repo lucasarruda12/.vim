@@ -7,6 +7,9 @@ set expandtab       " Use spaces instead of tabs
 set tabstop=2       " Add 2 spaces when pressing tab 
 set shiftwidth=4    " Show tabs as 4 spaces (default)
 
+filetype on
+filetype plugin on
+
 " Disable the arrow keys :(
 noremap <left> <nop>
 noremap <right> <nop>
