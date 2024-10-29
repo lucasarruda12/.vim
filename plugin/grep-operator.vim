@@ -12,7 +12,7 @@ function! s:GrepOperator(type)
         return
     endif
 
-    execute "silent! grep! -R --exclude-dir='.+' --exclude='.+' " . shellescape(@@) . " ."
+    execute "silent! grep! -r --exclude-dir='.?*' " . shellescape(@@) . " ."
     copen
     execute "redraw!"
 
