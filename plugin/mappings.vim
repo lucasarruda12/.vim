@@ -6,7 +6,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>  
 
 "open little terminal window
-nnoremap <leader>t :vert terminal ++cols=40 <cr>
+nnoremap <leader>t :vert terminal ++rows=40 <cr>
 
 "edit file under cursor
 nnoremap <leader>ef :vsplit <C-R>=expand('<cfile>')<cr><cr>
