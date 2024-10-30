@@ -3,6 +3,8 @@ set number
 syntax on
 set scrolloff=10
 
+set cursorline
+
 set expandtab
 set tabstop=2
 set shiftwidth=4
