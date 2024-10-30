@@ -1,6 +1,7 @@
 nnoremap <leader>q :call <SID>QuickFixToggle()<cr>
 
 let g:quickfix_is_open = 0
+let g:quick_fix_return_to_window = ""
 
 function! s:QuickFixToggle()
     if g:quickfix_is_open
@@ -8,7 +9,7 @@ function! s:QuickFixToggle()
         let g:quickfix_is_open = 0
         execute g:quickfix_return_to_window . "wincmd w"
     else
-        let g:quickfix_return_to_window . "wincmd w"
+        let g:quickfix_return_to_window = winnr()
         copen
         let g:quickfix_is_open = 1
     endif
