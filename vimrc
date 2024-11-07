@@ -17,6 +17,8 @@ colorscheme retrobox
 set hlsearch
 set incsearch
 
+set hidden
+
 " Disable the arrow keys :(
 noremap <left> <nop>
 noremap <right> <nop>
@@ -27,9 +29,6 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
-
-" Flag trailing whitespace as error
-" match Error /\v\s+$/<cr>
 
 " Currently following Steve Losh´s Learn VimScript the Hard Way. Some of its
 " exercises are very usefull, some are not. Im keeping everything in this main
