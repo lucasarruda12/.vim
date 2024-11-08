@@ -1057,9 +1057,7 @@ abbrev <buffer> Coprod ∐
 abbrev <buffer> coprod ⨿
 abbrev <buffer> Sum ∑
 abbrev <buffer> op ᵒᵖ
-abbrev <buffer> cons ∷
 abbrev <buffer> concat ⧺
-abbrev <buffer> :: ∷
 abbrev <buffer> inv ⁻¹
 abbrev <buffer> lnot ¬
 abbrev <buffer> lforall ∀
