@@ -1,6 +1,9 @@
 "open little netrw window
 nnoremap <Leader>m :Explore<CR>       
 
+"Center the current window with leaderleader
+nnoremap <leader><leader> zz
+
 "edit and source vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr> 
 nnoremap <leader>sv :source $MYVIMRC<cr>  

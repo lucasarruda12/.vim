@@ -1,3 +1,4 @@
+" Options
 let mapleader = " "
 set number
 syntax on
@@ -11,8 +12,6 @@ set shiftwidth=4
 
 filetype on
 filetype plugin on
-
-colorscheme retrobox
 
 set hlsearch
 set incsearch
@@ -30,9 +29,14 @@ inoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
+" Mappings
+" TODO: bring the mappings back
+
 " Currently following Steve Losh´s Learn VimScript the Hard Way. Some of its
 " exercises are very usefull, some are not. Im keeping everything in this main
 " file for now and figuring out later what i need and what i dont.
+
+nnoremap <leader>h :nohlsearch<cr>
 
 augroup vimscript_hard_way
     autocmd!
