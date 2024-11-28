@@ -18,6 +18,8 @@ set incsearch
 
 set hidden
 
+colorscheme desert
+
 " Disable the arrow keys :(
 noremap <left> <nop>
 noremap <right> <nop>
